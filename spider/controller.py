@@ -8,7 +8,7 @@ import time
 import re
 
 
-class Controller():
+class Controller:
     def __init__(self, session):
         self.session = session
         self.data = {}
@@ -65,17 +65,16 @@ class Controller():
         if ac_list and len(ac_list) > 0:
             for ac_problem in ac_list:
                 language_clone = []
-                language_code_map = {}
-                language_code_map['title'] = ac_problem['stat']['question__title_slug']
-                language_code_map['id'] = ac_problem['stat']['question_id']
-                language_code_map['level'] = ac_problem['difficulty']['level']
-                language_code_map['paid_only'] = ac_problem['paid_only']
-                language_code_map['acceptance'] = '{:.2f}%'.format(ac_problem['stat']['total_acs'] / ac_problem['stat'][
-                    'total_submitted'] * 100)
+                language_code_map = {'title': ac_problem['stat']['question__title_slug'],
+                                     'id': ac_problem['stat']['question_id'],
+                                     'level': ac_problem['difficulty']['level'], 'paid_only': ac_problem['paid_only'],
+                                     'acceptance': '{:.2f}%'.format(
+                                         ac_problem['stat']['total_acs'] / ac_problem['stat'][
+                                             'total_submitted'] * 100)}
                 for language in DEFAULT_CONFIG['sys']['langs']:
                     language_clone.append(language)
                 self.fetch_and_write(ac_problem, language_clone, language_code_map)
-                time.sleep(1)
+                time.sleep(0.5)
                 language_code_map_arr.append(language_code_map)
         result_object = self.write_result(language_code_map_arr, get_solution_dir())
         self.generate_markdown(result_object)
