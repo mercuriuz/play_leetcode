@@ -75,7 +75,7 @@ class Controller():
                 for language in DEFAULT_CONFIG['sys']['langs']:
                     language_clone.append(language)
                 self.fetch_and_write(ac_problem, language_clone, language_code_map)
-                time.sleep(2)
+                time.sleep(1)
                 language_code_map_arr.append(language_code_map)
         result_object = self.write_result(language_code_map_arr, get_solution_dir())
         self.generate_markdown(result_object)
