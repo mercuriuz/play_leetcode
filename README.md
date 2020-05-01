@@ -1,4 +1,4 @@
-<p align="center"><img width="300" src="https://raw.githubusercontent.com/mercuriuz/simple_templates/master/resources/site-logo.png"></p>
+<p align="center"><img width="300" src="https://raw.githubusercontent.com/mercuriuz/play_leetcode/master/resources/site-logo.png"></p>
 <p align="center">
     <img src="https://img.shields.io/badge/Solved/Total(Locked)-37/1321(208)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-1-blue.svg?style=flat-square" alt="">
