@@ -89,11 +89,11 @@ class Controller:
                 for language in DEFAULT_CONFIG['sys']['langs']:
                     language_clone.append(language)
                 self.fetch_and_write(ac_problem, language_clone, language_code_map)
-                time.sleep(5)
+                time.sleep(3)
                 language_code_map_arr.append(language_code_map)
         if len(language_code_map_arr) > 0:
-            result_object = self.write_result(language_code_map_arr, get_solution_dir())
-            self.generate_markdown(result_object)
+            self.write_result(language_code_map_arr, get_solution_dir())
+            self.generate_markdown()
 
     def fetch_and_write(self, ac_problem, language_clone, language_code_map):
         self.fetch_ac_solution_of_problem(ac_problem, language_clone, 0, language_code_map)
@@ -109,6 +109,7 @@ class Controller:
         headers['Accept'] = '*/*'
         req = self.session.get(url, headers=headers)
         submission_json = req.json()['submissions_dump']
+        submission_json = sorted(submission_json, key=lambda e:e.__getitem__('id'))
         for element in submission_json:
             if element['status_display'] != 'Accepted':
                 continue
@@ -117,6 +118,8 @@ class Controller:
             match_result = self.pattern.findall(req.text)
             code = eval("'" + match_result[0] + "'")
             language_code_map['python'] = code
+            if element['status_display'] == 'Accepted':
+                break
         return language_code_map
 
     def fetch_question(self, problem_info, language_code_map):
@@ -139,12 +142,15 @@ class Controller:
             f.write(language_code_map['question'])
 
     def write_result(self, language_code_map_arr, result_json_path):
-        result = {}
+        with open('{}/result.json'.format(result_json_path), 'r') as f:
+            result = json.load(f)
+        if result is None:
+            result = {}
         for element in language_code_map_arr:
             ele = {'id': element['id'], 'level': element['level'], 'title': element['title'],
                    'paid_only': element['paid_only'], 'acceptance': element['acceptance'],
                    'language': 'python3'}
-            result[element['id']] = ele
+            result[str(element['id'])] = ele
         result['last_update_time'] = time.strftime('%Y-%m-%d', time.localtime())
         result['total'] = self.data['total']
         result['solved'] = self.data['solved']
@@ -152,9 +158,10 @@ class Controller:
         result['language'] = self.data['language']
         with open('{}/result.json'.format(result_json_path), 'w') as f:
             json.dump(result, f)
-        return result
 
-    def generate_markdown(self, result_object ):
+    def generate_markdown(self):
+        with open('{}/result.json'.format(get_solution_dir()), 'r') as f:
+            result_object = json.load(f)
         template_path = get_resource_file('README.tpl')
         tpl = self.read_and_copy_tpl(template_path)
         output_dir = get_solution_dir()
@@ -163,7 +170,7 @@ class Controller:
         easy_cnt = 0
         problem_numbers = []
         for key in result_object.keys():
-            if isinstance(key, int):
+            if isinstance(key, str) and key.isdigit():
                 problem_numbers.append(key)
         solutions = []
         for num in problem_numbers:

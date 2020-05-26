@@ -35,15 +35,20 @@ def get_resource_file(key):
     return '/'.join([get_resources_dir(), key])
 
 
-def format_id(id):
-    if id < 10:
-        return '000{}'.format(id)
-    elif id < 100:
-        return '00{}'.format(id)
-    elif id < 1000:
-        return '0{}'.format(id)
+def format_id(idx):
+    if isinstance(idx, str):
+        if idx.isdigit():
+            idx = int(idx)
     else:
-        return '{}'.format(id)
+        return -1
+    if idx < 10:
+        return '000{}'.format(idx)
+    elif idx < 100:
+        return '00{}'.format(idx)
+    elif idx < 1000:
+        return '0{}'.format(idx)
+    else:
+        return '{}'.format(idx)
 #
 #
 #if __name__ == '__main__':
