@@ -9,19 +9,34 @@ import re
 
 
 class Controller:
-    def __init__(self, session):
+    def __init__(self, session, update_all=False):
         self.session = session
+        self.update_all = update_all
+        self.processed_list = self.load_processed_list()
         self.data = {}
         self.headers = {}
         self.user = {}
         self.pattern = re.compile(r"submissionCode:\s*'([\s\S]*)',\s*editCodeUrl")
+
+    def load_processed_list(self):
+        res = []
+        try:
+            with open('{}/result.json'.format(get_solution_dir()), 'r') as f:
+                tmp = json.load(f)
+            if tmp is not None:
+                res = [int(key) for key in tmp.keys() if key.isdigit()]
+        except:
+            pass
+        return res
 
     def make_options(self, url):
         options = {'url': url, 'headers': {'Referer': DEFAULT_CONFIG['sys']['urls']['base']}}
         return options
 
     def signin(self, user):
-        headers = {'Referer': DEFAULT_CONFIG['sys']['urls']['base'], 'Accept-Encoding': ''}
+        headers = {
+            'Referer': DEFAULT_CONFIG['sys']['urls']['base'], 'Accept-Encoding': '',
+            'Connection': 'close'}
         req = self.session.get(DEFAULT_CONFIG['sys']['urls']['login'], headers=headers)
         user['loginCSRF'] = req.cookies.get('csrftoken')
         payloads = {
@@ -56,7 +71,7 @@ class Controller:
         for element in ac_list:
             if element['paid_only']:
                 self.data['locked'] += 1
-            if element['status'] == 'ac' and element['stat']['question_id'] not in result:
+            if element['status'] == 'ac' and element['stat']['question_id'] not in result and element['stat']['question_id'] not in self.processed_list:
                 elements.append(element)
         return elements
 
@@ -76,8 +91,9 @@ class Controller:
                 self.fetch_and_write(ac_problem, language_clone, language_code_map)
                 time.sleep(5)
                 language_code_map_arr.append(language_code_map)
-        result_object = self.write_result(language_code_map_arr, get_solution_dir())
-        self.generate_markdown(result_object)
+        if len(language_code_map_arr) > 0:
+            result_object = self.write_result(language_code_map_arr, get_solution_dir())
+            self.generate_markdown(result_object)
 
     def fetch_and_write(self, ac_problem, language_clone, language_code_map):
         self.fetch_ac_solution_of_problem(ac_problem, language_clone, 0, language_code_map)
