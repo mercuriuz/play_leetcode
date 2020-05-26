@@ -39,8 +39,6 @@ def format_id(idx):
     if isinstance(idx, str):
         if idx.isdigit():
             idx = int(idx)
-    else:
-        return -1
     if idx < 10:
         return '000{}'.format(idx)
     elif idx < 100:
