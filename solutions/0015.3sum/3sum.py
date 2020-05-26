@@ -4,30 +4,20 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        nums.sort()
-        tmp_dict = {}
-        a = set()
-        b = set()
-        result = []
+        num_dict = {}
         for i in nums:
-            if tmp_dict.get(i) is None:
-                tmp_dict[i] = 1
-            else:
-                tmp_dict[i] += 1
-        for i in nums:
-            tmp_dict[i] -= 1
-            for k in a:
-                if -(k + i) in tmp_dict and tmp_dict[-(k+i)] > 0:
-                    if -(k+i) >= i:
-                        b.add((i, k, -(k+i)))
-                    elif -(k+i) <= i:
-                        b.add((-(k+i), i, k))
-                    else:
-                        b.add((i, -(k+i), k))
-            a.add(i)
-        for item in b:
-            tmp = list(item)
-            tmp.sort()
-            result.append(tmp)
-        return result
-
+            num_dict[i] = num_dict.get(i, 0) + 1
+        if 0 in num_dict and num_dict[0] > 2:
+            res = [[0,0,0]]
+        else:
+            res = []
+        neg = sorted(filter(lambda x: x < 0, num_dict))
+        pos = sorted(filter(lambda x: x >= 0, num_dict))
+        for i in neg:
+            for j in pos:
+                if -(i+j) in num_dict:
+                    if -(i+j) in (i, j) and num_dict[-(i+j)]>1:
+                        res.append([i,j,-(i+j)])
+                    elif -(i+j) < i or -(i+j) > j:
+                        res.append([i,-(i+j), j])
+        return res

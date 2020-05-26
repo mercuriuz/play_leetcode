@@ -12,21 +12,20 @@ class Solution:
         :rtype: ListNode
         """
         dummy = ListNode(0)
-        p = dummy
+        dummy.next = l1
         cn = 0
-        while l1 or l2:
-            res = cn + (l1.val if l1 else 0) + (l2.val if l2 else 0)
-            cn = res // 10
-            val = res % 10
-            p.next = ListNode(val)
-            p = p.next
-            l1 = l1.next if l1 else l1
-            l2 = l2.next if l2 else l2
-        if cn != 0:
-            p.next = ListNode(cn)
-        res = dummy.next
-        result = []
-        while res:
-            result.append(res.val)
-            res = res.next
-        return result
+        while l1 and l2:
+            res = cn + (l1.val) + (l2.val)
+            cn, val = res // 10, res % 10
+            l1.val = val
+            prev, l1, l2 = l1, l1.next, l2.next
+        l = l1 or l2
+        prev.next = l
+        while l and cn:
+            res = cn + l.val
+            cn, val = res // 10, res % 10
+            l.val = val
+            prev, l = l, l.next
+        if cn:
+            prev.next = ListNode(cn)
+        return dummy.next

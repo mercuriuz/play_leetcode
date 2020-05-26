@@ -109,7 +109,7 @@ class Controller:
         headers['Accept'] = '*/*'
         req = self.session.get(url, headers=headers)
         submission_json = req.json()['submissions_dump']
-        submission_json = sorted(submission_json, key=lambda e:e.__getitem__('id'))
+        submission_json = sorted(submission_json, key=lambda e:e.__getitem__('id'), reverse=True)
         for element in submission_json:
             if element['status_display'] != 'Accepted':
                 continue

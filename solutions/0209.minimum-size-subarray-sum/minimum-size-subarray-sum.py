@@ -5,23 +5,26 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        l = 0
-        r = 0
-        sum_all = 0
-        nums_len = len(nums)
-        minLength = nums_len + 1
-        while l < nums_len:
-            if r < nums_len and sum_all < s:
-                sum_all += nums[r]
-                r += 1
-            else:
-                sum_all -= nums[l]
-                l += 1
-
-            if sum_all >= s:
-                minLength = min(minLength, r - l)
-
-        if minLength == nums_len + 1:
+        
+        n = len(nums)
+        if (n < 1 or sum(nums) < s):
             return 0
-
-        return minLength
+        
+        # 维护一个滑动窗口nums[i,j], nums[i...j] < s
+        i = 0
+        j = -1
+        total = 0
+        res = n + 1
+        while i <= n-1:
+            if (j + 1 < n) and total < s:
+                j += 1
+                total += nums[j]
+            else:
+                total -= nums[i]
+                i += 1
+            
+            if (total >= s):
+                res = min(res, j-i+1)
+        if res == n+1:
+            return 0
+        return res

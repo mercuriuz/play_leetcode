@@ -5,11 +5,11 @@ class Solution:
         import sys
         first, second =  sys.maxsize, sys.maxsize
         for num in nums:
-            if first >= num:
-                first = num
-            elif first < num and second >= num:
-                second = num
-            else:
+            if num > second:
                 return True
+            if num <= first:
+                first = num
+            else:
+                second = num
         return False
             
