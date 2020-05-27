@@ -1,16 +1,16 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-42/1350(213)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-46/1350(213)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-2-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-25-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Easy-15-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-27-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Easy-17-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
 
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-05-26</b>
+    <b>Last updated: 2020-05-27</b>
     <br><br>
 </p>
 
@@ -27,6 +27,9 @@
 |0009|[palindrome-number](https://leetcode.com/problems/palindrome-number/)|[python3](./solutions/0009.palindrome-number/palindrome-number.py)|Easy|57.54%||
 |0010|[regular-expression-matching](https://leetcode.com/problems/regular-expression-matching/)|[python3](./solutions/0010.regular-expression-matching/regular-expression-matching.py)|Hard|27.96%||
 |0011|[container-with-most-water](https://leetcode.com/problems/container-with-most-water/)|[python3](./solutions/0011.container-with-most-water/container-with-most-water.py)|Medium|63.29%||
+|0012|[integer-to-roman](https://leetcode.com/problems/integer-to-roman/)|[python3](./solutions/0012.integer-to-roman/integer-to-roman.py)|Medium|63.58%||
+|0013|[roman-to-integer](https://leetcode.com/problems/roman-to-integer/)|[python3](./solutions/0013.roman-to-integer/roman-to-integer.py)|Easy|61.55%||
+|0014|[longest-common-prefix](https://leetcode.com/problems/longest-common-prefix/)|[python3](./solutions/0014.longest-common-prefix/longest-common-prefix.py)|Easy|37.28%||
 |0015|[3sum](https://leetcode.com/problems/3sum/)|[python3](./solutions/0015.3sum/3sum.py)|Medium|27.07%||
 |0024|[swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[python3](./solutions/0024.swap-nodes-in-pairs/swap-nodes-in-pairs.py)|Medium|65.67%||
 |0026|[remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python3](./solutions/0026.remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.py)|Easy|50.07%||
@@ -50,6 +53,7 @@
 |0209|[minimum-size-subarray-sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[python3](./solutions/0209.minimum-size-subarray-sum/minimum-size-subarray-sum.py)|Medium|42.46%||
 |0215|[kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[python3](./solutions/0215.kth-largest-element-in-an-array/kth-largest-element-in-an-array.py)|Medium|62.49%||
 |0283|[move-zeroes](https://leetcode.com/problems/move-zeroes/)|[python3](./solutions/0283.move-zeroes/move-zeroes.py)|Easy|60.92%||
+|0287|[find-the-duplicate-number](https://leetcode.com/problems/find-the-duplicate-number/)|[python3](./solutions/0287.find-the-duplicate-number/find-the-duplicate-number.py)|Medium|65.69%||
 |0334|[increasing-triplet-subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[python3](./solutions/0334.increasing-triplet-subsequence/increasing-triplet-subsequence.py)|Medium|38.17%||
 |0345|[reverse-vowels-of-a-string](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[python3](./solutions/0345.reverse-vowels-of-a-string/reverse-vowels-of-a-string.py)|Easy|49.93%||
 |0347|[top-k-frequent-elements](https://leetcode.com/problems/top-k-frequent-elements/)|[python3](./solutions/0347.top-k-frequent-elements/top-k-frequent-elements.py)|Medium|60.71%||
