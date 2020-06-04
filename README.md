@@ -1,8 +1,8 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-46/1350(213)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-47/1359(214)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-2-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-27-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-28-blue.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Easy-17-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
@@ -10,7 +10,7 @@
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-05-27</b>
+    <b>Last updated: 2020-06-04</b>
     <br><br>
 </p>
 
@@ -31,6 +31,7 @@
 |0013|[roman-to-integer](https://leetcode.com/problems/roman-to-integer/)|[python3](./solutions/0013.roman-to-integer/roman-to-integer.py)|Easy|61.55%||
 |0014|[longest-common-prefix](https://leetcode.com/problems/longest-common-prefix/)|[python3](./solutions/0014.longest-common-prefix/longest-common-prefix.py)|Easy|37.28%||
 |0015|[3sum](https://leetcode.com/problems/3sum/)|[python3](./solutions/0015.3sum/3sum.py)|Medium|27.07%||
+|0016|[3sum-closest](https://leetcode.com/problems/3sum-closest/)|[python3](./solutions/0016.3sum-closest/3sum-closest.py)|Medium|44.15%||
 |0024|[swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[python3](./solutions/0024.swap-nodes-in-pairs/swap-nodes-in-pairs.py)|Medium|65.67%||
 |0026|[remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python3](./solutions/0026.remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.py)|Easy|50.07%||
 |0027|[remove-element](https://leetcode.com/problems/remove-element/)|[python3](./solutions/0027.remove-element/remove-element.py)|Easy|58.18%||
