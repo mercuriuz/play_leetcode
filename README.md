@@ -1,8 +1,8 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-48/1359(214)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-49/1359(214)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-2-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-29-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-30-blue.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Easy-17-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
@@ -10,7 +10,7 @@
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-06-04</b>
+    <b>Last updated: 2020-06-05</b>
     <br><br>
 </p>
 
@@ -33,6 +33,7 @@
 |0015|[3sum](https://leetcode.com/problems/3sum/)|[python3](./solutions/0015.3sum/3sum.py)|Medium|27.07%||
 |0016|[3sum-closest](https://leetcode.com/problems/3sum-closest/)|[python3](./solutions/0016.3sum-closest/3sum-closest.py)|Medium|44.15%||
 |0017|[letter-combinations-of-a-phone-number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[python3](./solutions/0017.letter-combinations-of-a-phone-number/letter-combinations-of-a-phone-number.py)|Medium|53.60%||
+|0018|[4sum](https://leetcode.com/problems/4sum/)|[python3](./solutions/0018.4sum/4sum.py)|Medium|37.65%||
 |0024|[swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[python3](./solutions/0024.swap-nodes-in-pairs/swap-nodes-in-pairs.py)|Medium|65.67%||
 |0026|[remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python3](./solutions/0026.remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.py)|Easy|50.07%||
 |0027|[remove-element](https://leetcode.com/problems/remove-element/)|[python3](./solutions/0027.remove-element/remove-element.py)|Easy|58.18%||
