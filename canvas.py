@@ -1,3 +1,4 @@
+from functools import lru_cache
 class Solution:
     def fourSum(self, nums, target):
         n, res = len(nums), []
@@ -32,10 +33,56 @@ class Solution:
                         tail -= 1
         return res
 
+    def mergeTwoLists(self, l1, l2):
+        dummy0, dummy1 = ListNode(0), ListNode(0)
+        dummy0.next = dummy1
+
+        while l1.next is not None and l2.next is not None:
+            val1, val2 = l1.val, l2.val
+            if val1 < val2:
+                dummy1.next = l1
+                l1 = l1.next
+            else:
+                dummy1.next = l2
+                l2 = l2.next
+            dummy1 = dummy1.next
+        
+        if l1:
+            dummy1.next = l1
+        if l2:
+            dummy1.next = l2
+            
+        return dummy0.next.next
+
+    def generateParenthesis(self, n):
+        results = []
+        def back(combination, left, right):
+            if len(combination) == 2 * n:
+                results.append(''.join(combination))
+                return
+            if left < n:
+                combination.append('(')
+                back(combination, left+1, right)
+                combination.pop()
+            if right < left:
+                combination.append(')')
+                back(combination, left, right+1)
+                combination.pop()
+        back([], 0, 0)
+        return results
+
+    @lru_cache(None)
+    def generateParenthesis1(self, n):
+        if n == 0:
+            return ['']
+        ans = []
+        for c in range(n):
+            for left in self.generateParenthesis1(c):
+                for right in self.generateParenthesis(n-1-c):
+                    ans.append('({}){}'.format(left, right))
+        return ans
 if __name__ == "__main__":
     solution = Solution()
-    nums = [1, 0, -1, 0, -2, 2, -1]
-    nums = [-2, -2, 0, 0, 0, 2, 2]
-    target = 0
-    res = solution.fourSum(nums, target)
+    n = 3
+    res = solution.generateParenthesis1(n)
     print(res)

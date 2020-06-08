@@ -1,16 +1,16 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-49/1359(214)-green.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Hard-2-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-30-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Easy-17-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-56/1363(214)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Hard-4-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-32-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Easy-20-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
 
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-06-05</b>
+    <b>Last updated: 2020-06-09</b>
     <br><br>
 </p>
 
@@ -34,9 +34,16 @@
 |0016|[3sum-closest](https://leetcode.com/problems/3sum-closest/)|[python3](./solutions/0016.3sum-closest/3sum-closest.py)|Medium|44.15%||
 |0017|[letter-combinations-of-a-phone-number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[python3](./solutions/0017.letter-combinations-of-a-phone-number/letter-combinations-of-a-phone-number.py)|Medium|53.60%||
 |0018|[4sum](https://leetcode.com/problems/4sum/)|[python3](./solutions/0018.4sum/4sum.py)|Medium|37.65%||
+|0019|[remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[python3](./solutions/0019.remove-nth-node-from-end-of-list/remove-nth-node-from-end-of-list.py)|Medium|38.69%||
+|0020|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[python3](./solutions/0020.valid-parentheses/valid-parentheses.py)|Easy|41.72%||
+|0021|[merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[python3](./solutions/0021.merge-two-sorted-lists/merge-two-sorted-lists.py)|Easy|62.72%||
+|0022|[generate-parentheses](https://leetcode.com/problems/generate-parentheses/)|[python3](./solutions/0022.generate-parentheses/generate-parentheses.py)|Medium|75.48%||
+|0023|[merge-k-sorted-lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[python3](./solutions/0023.merge-k-sorted-lists/merge-k-sorted-lists.py)|Hard|51.80%||
 |0024|[swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[python3](./solutions/0024.swap-nodes-in-pairs/swap-nodes-in-pairs.py)|Medium|65.67%||
+|0025|[reverse-nodes-in-k-group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[python3](./solutions/0025.reverse-nodes-in-k-group/reverse-nodes-in-k-group.py)|Hard|61.23%||
 |0026|[remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python3](./solutions/0026.remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.py)|Easy|50.07%||
 |0027|[remove-element](https://leetcode.com/problems/remove-element/)|[python3](./solutions/0027.remove-element/remove-element.py)|Easy|58.18%||
+|0028|[implement-strstr](https://leetcode.com/problems/implement-strstr/)|[python3](./solutions/0028.implement-strstr/implement-strstr.py)|Easy|39.68%||
 |0034|[find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[python3](./solutions/0034.find-first-and-last-position-of-element-in-sorted-array/find-first-and-last-position-of-element-in-sorted-array.py)|Medium|39.57%||
 |0049|[group-anagrams](https://leetcode.com/problems/group-anagrams/)|[python3](./solutions/0049.group-anagrams/group-anagrams.py)|Medium|61.58%||
 |0073|[set-matrix-zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[python3](./solutions/0073.set-matrix-zeroes/set-matrix-zeroes.py)|Medium|55.44%||
