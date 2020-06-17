@@ -81,8 +81,33 @@ class Solution:
                 for right in self.generateParenthesis(n-1-c):
                     ans.append('({}){}'.format(left, right))
         return ans
+
+    def divide(self, dividend, divisor):
+        a, b, p, t = abs(dividend), abs(divisor), 0, 1
+        sign = (a == dividend) == (b == divisor)
+        if a == 0:
+            return 0
+        if a == b:
+            return 1 if sign else -1
+        if b == 1:
+            res = a if sign else -a
+            return min(res, (1 << 31) - 1)
+        if a < b:
+            return 0
+        while a >= b or t > 1:
+            if a >= b:
+                p += t
+                a -= b
+                t <<= 1
+                b <<= 1
+            else:
+                t >>= 1
+                b >>= 1
+        res = p if sign else -p
+        return min(res, (1 << 31) - 1)
+
 if __name__ == "__main__":
     solution = Solution()
     n = 3
-    res = solution.generateParenthesis1(n)
+    res = solution.divide(2147483647, 2)
     print(res)

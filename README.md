@@ -1,8 +1,8 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-56/1363(214)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-57/1372(215)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-4-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-32-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-33-blue.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Easy-20-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
@@ -10,7 +10,7 @@
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-06-09</b>
+    <b>Last updated: 2020-06-17</b>
     <br><br>
 </p>
 
@@ -44,6 +44,7 @@
 |0026|[remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python3](./solutions/0026.remove-duplicates-from-sorted-array/remove-duplicates-from-sorted-array.py)|Easy|50.07%||
 |0027|[remove-element](https://leetcode.com/problems/remove-element/)|[python3](./solutions/0027.remove-element/remove-element.py)|Easy|58.18%||
 |0028|[implement-strstr](https://leetcode.com/problems/implement-strstr/)|[python3](./solutions/0028.implement-strstr/implement-strstr.py)|Easy|39.68%||
+|0029|[divide-two-integers](https://leetcode.com/problems/divide-two-integers/)|[python3](./solutions/0029.divide-two-integers/divide-two-integers.py)|Medium|19.85%||
 |0034|[find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[python3](./solutions/0034.find-first-and-last-position-of-element-in-sorted-array/find-first-and-last-position-of-element-in-sorted-array.py)|Medium|39.57%||
 |0049|[group-anagrams](https://leetcode.com/problems/group-anagrams/)|[python3](./solutions/0049.group-anagrams/group-anagrams.py)|Medium|61.58%||
 |0073|[set-matrix-zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[python3](./solutions/0073.set-matrix-zeroes/set-matrix-zeroes.py)|Medium|55.44%||
