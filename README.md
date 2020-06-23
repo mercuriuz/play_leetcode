@@ -1,16 +1,16 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-57/1372(215)-green.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Hard-4-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-33-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Easy-20-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-60/1377(216)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Hard-5-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-34-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Easy-21-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
 
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-06-17</b>
+    <b>Last updated: 2020-06-23</b>
     <br><br>
 </p>
 
@@ -45,6 +45,8 @@
 |0027|[remove-element](https://leetcode.com/problems/remove-element/)|[python3](./solutions/0027.remove-element/remove-element.py)|Easy|58.18%||
 |0028|[implement-strstr](https://leetcode.com/problems/implement-strstr/)|[python3](./solutions/0028.implement-strstr/implement-strstr.py)|Easy|39.68%||
 |0029|[divide-two-integers](https://leetcode.com/problems/divide-two-integers/)|[python3](./solutions/0029.divide-two-integers/divide-two-integers.py)|Medium|19.85%||
+|0030|[substring-with-concatenation-of-all-words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|[python3](./solutions/0030.substring-with-concatenation-of-all-words/substring-with-concatenation-of-all-words.py)|Hard|30.89%||
+|0031|[next-permutation](https://leetcode.com/problems/next-permutation/)|[python3](./solutions/0031.next-permutation/next-permutation.py)|Medium|33.88%||
 |0034|[find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[python3](./solutions/0034.find-first-and-last-position-of-element-in-sorted-array/find-first-and-last-position-of-element-in-sorted-array.py)|Medium|39.57%||
 |0049|[group-anagrams](https://leetcode.com/problems/group-anagrams/)|[python3](./solutions/0049.group-anagrams/group-anagrams.py)|Medium|61.58%||
 |0073|[set-matrix-zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[python3](./solutions/0073.set-matrix-zeroes/set-matrix-zeroes.py)|Medium|55.44%||
@@ -56,6 +58,7 @@
 |0103|[binary-tree-zigzag-level-order-traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|[python3](./solutions/0103.binary-tree-zigzag-level-order-traversal/binary-tree-zigzag-level-order-traversal.py)|Medium|54.43%||
 |0108|[convert-sorted-array-to-binary-search-tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|[python3](./solutions/0108.convert-sorted-array-to-binary-search-tree/convert-sorted-array-to-binary-search-tree.py)|Easy|70.99%||
 |0109|[convert-sorted-list-to-binary-search-tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)|[python3](./solutions/0109.convert-sorted-list-to-binary-search-tree/convert-sorted-list-to-binary-search-tree.py)|Medium|72.12%||
+|0112|[path-sum](https://leetcode.com/problems/path-sum/)|[python3](./solutions/0112.path-sum/path-sum.py)|Easy|49.85%||
 |0114|[flatten-binary-tree-to-linked-list](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[python3](./solutions/0114.flatten-binary-tree-to-linked-list/flatten-binary-tree-to-linked-list.py)|Medium|68.97%||
 |0125|[valid-palindrome](https://leetcode.com/problems/valid-palindrome/)|[python3](./solutions/0125.valid-palindrome/valid-palindrome.py)|Easy|43.90%||
 |0143|[reorder-list](https://leetcode.com/problems/reorder-list/)|[python3](./solutions/0143.reorder-list/reorder-list.py)|Medium|55.90%||
