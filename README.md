@@ -1,8 +1,8 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-61/1377(216)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-62/1386(217)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-6-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-34-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-35-blue.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Easy-21-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
@@ -10,7 +10,7 @@
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-06-24</b>
+    <b>Last updated: 2020-06-29</b>
     <br><br>
 </p>
 
@@ -48,6 +48,7 @@
 |0030|[substring-with-concatenation-of-all-words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|[python3](./solutions/0030.substring-with-concatenation-of-all-words/substring-with-concatenation-of-all-words.py)|Hard|30.89%||
 |0031|[next-permutation](https://leetcode.com/problems/next-permutation/)|[python3](./solutions/0031.next-permutation/next-permutation.py)|Medium|33.88%||
 |0032|[longest-valid-parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[python3](./solutions/0032.longest-valid-parentheses/longest-valid-parentheses.py)|Hard|30.86%||
+|0033|[search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[python3](./solutions/0033.search-in-rotated-sorted-array/search-in-rotated-sorted-array.py)|Medium|38.15%||
 |0034|[find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[python3](./solutions/0034.find-first-and-last-position-of-element-in-sorted-array/find-first-and-last-position-of-element-in-sorted-array.py)|Medium|39.57%||
 |0049|[group-anagrams](https://leetcode.com/problems/group-anagrams/)|[python3](./solutions/0049.group-anagrams/group-anagrams.py)|Medium|61.58%||
 |0073|[set-matrix-zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[python3](./solutions/0073.set-matrix-zeroes/set-matrix-zeroes.py)|Medium|55.44%||

@@ -156,9 +156,47 @@ class Solution:
                 l2, r2 = 0, 0
         return res
 
+def binary_search(nums, target, start, end):
+    if start > end:
+        return -1
+    mid = (start + end) // 2
+    if nums[mid] > target:
+        return binary_search(nums, target, start, mid-1)
+    elif nums[mid] < target:
+        return binary_search(nums, target, mid+1, end)
+    else:
+        return mid
 
+    def search(nums, target):
+        if not nums:
+            return - 1
+        start, end = 0, len(nums) - 1
+        while start <= end:
+            mid = (start + end) // 2
+            if nums[0] <= nums[mid]:
+                if nums[0] <= target < nums[mid]:
+                    end = mid - 1
+                else:
+                    start = mid + 1
+            else:
+                if nums[mid] < target <= nums[-1]:
+                    start = mid + 1
+                else:
+                    end = mid - 1
+        return -1
 if __name__ == "__main__":
     solution = Solution()
     n = 3
-    res = solution.longestValidParentheses('(())')
-    print(res)
+    # res = solution.longestValidParentheses('(())')
+    # print(res)
+
+    import random
+    n = 20
+    a = [random.randint(0, 2*n) for _ in range(n)]
+    a = list(set(a))
+    a.sort()
+    print(a)
+    target = random.randint(0, 2*n)
+    print(target)
+    idx = binary_search(a, target, 0, len(a)-1)
+    print(idx)
