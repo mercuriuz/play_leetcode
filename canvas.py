@@ -167,36 +167,53 @@ def binary_search(nums, target, start, end):
     else:
         return mid
 
-    def search(nums, target):
-        if not nums:
-            return - 1
-        start, end = 0, len(nums) - 1
-        while start <= end:
-            mid = (start + end) // 2
-            if nums[0] <= nums[mid]:
-                if nums[0] <= target < nums[mid]:
-                    end = mid - 1
-                else:
-                    start = mid + 1
+def search(nums, target):
+    if not nums:
+        return - 1
+    start, end = 0, len(nums) - 1
+    while start <= end:
+        mid = (start + end) // 2
+        if nums[0] <= nums[mid]:
+            if nums[0] <= target < nums[mid]:
+                end = mid - 1
             else:
-                if nums[mid] < target <= nums[-1]:
-                    start = mid + 1
-                else:
-                    end = mid - 1
-        return -1
-if __name__ == "__main__":
-    solution = Solution()
-    n = 3
-    # res = solution.longestValidParentheses('(())')
-    # print(res)
+                start = mid + 1
+        else:
+            if nums[mid] < target <= nums[-1]:
+                start = mid + 1
+            else:
+                end = mid - 1
+    return -1
 
-    import random
-    n = 20
-    a = [random.randint(0, 2*n) for _ in range(n)]
-    a = list(set(a))
-    a.sort()
-    print(a)
-    target = random.randint(0, 2*n)
-    print(target)
-    idx = binary_search(a, target, 0, len(a)-1)
-    print(idx)
+def n_backwards(n):
+    if n == 1:
+        return '1'
+    
+    def process(s):
+        res = ''
+        cur = s[0]
+        cnt = 1
+        if len(s) == 1:
+            return '11'
+        for i in range(1, len(s)):
+            if s[i] == cur:
+                cnt += 1
+            else:
+                res += '{}{}'.format(cnt, cur)
+                cur = s[i]
+                cnt = 1
+        res += '{}{}'.format(cnt, cur)
+        return res
+    
+    rd = 1
+    pre, cur = '', '1'
+    while rd < n:
+        pre, cur = cur, process(cur)
+        rd += 1
+    return cur
+
+
+
+if __name__ == "__main__":
+    for i in range(1, 5):
+        print(n_backwards(i))

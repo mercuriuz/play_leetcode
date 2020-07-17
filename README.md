@@ -1,16 +1,16 @@
 <p align="center"><img width="300" src="./resources/site-logo.png"></p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Solved/Total(Locked)-62/1386(217)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-65/1392(219)-green.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Hard-6-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Medium-35-blue.svg?style=flat-square" alt="">
-    <img src="https://img.shields.io/badge/Easy-21-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-36-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Easy-23-blue.svg?style=flat-square" alt="">
 </p>
 <h3 align="center">My leetcode solutions</h3>
 
 <p align="center">
     <b>Language: python3</b>
     <br>
-    <b>Last updated: 2020-06-29</b>
+    <b>Last updated: 2020-07-09</b>
     <br><br>
 </p>
 
@@ -50,6 +50,9 @@
 |0032|[longest-valid-parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[python3](./solutions/0032.longest-valid-parentheses/longest-valid-parentheses.py)|Hard|30.86%||
 |0033|[search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[python3](./solutions/0033.search-in-rotated-sorted-array/search-in-rotated-sorted-array.py)|Medium|38.15%||
 |0034|[find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[python3](./solutions/0034.find-first-and-last-position-of-element-in-sorted-array/find-first-and-last-position-of-element-in-sorted-array.py)|Medium|39.57%||
+|0035|[search-insert-position](https://leetcode.com/problems/search-insert-position/)|[python3](./solutions/0035.search-insert-position/search-insert-position.py)|Easy|45.76%||
+|0036|[valid-sudoku](https://leetcode.com/problems/valid-sudoku/)|[python3](./solutions/0036.valid-sudoku/valid-sudoku.py)|Medium|60.09%||
+|0038|[count-and-say](https://leetcode.com/problems/count-and-say/)|[python3](./solutions/0038.count-and-say/count-and-say.py)|Easy|55.72%||
 |0049|[group-anagrams](https://leetcode.com/problems/group-anagrams/)|[python3](./solutions/0049.group-anagrams/group-anagrams.py)|Medium|61.58%||
 |0073|[set-matrix-zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[python3](./solutions/0073.set-matrix-zeroes/set-matrix-zeroes.py)|Medium|55.44%||
 |0075|[sort-colors](https://leetcode.com/problems/sort-colors/)|[python3](./solutions/0075.sort-colors/sort-colors.py)|Medium|55.01%||
